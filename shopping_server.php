@@ -36,9 +36,7 @@ echo "$" . $_SESSION["webAppCount"] * 95;
 
 echo '
 </td>
-</tr>';
-
-echo '
+</tr>
 
 <tr>
 <td>
