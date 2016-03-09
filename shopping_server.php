@@ -23,8 +23,10 @@ echo
 
     <th>
     Amount
-    </th>
+    </th>';
 
+    if (!($_SESSION["webAppCount"] == 0)) {
+echo '
     <tr>
 
     <td>
@@ -45,8 +47,10 @@ echo
 
     echo '
     </td>
-    </tr>
+    </tr>';
+}
 
+echo '
     <tr>
 
     <td>
