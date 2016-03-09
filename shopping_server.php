@@ -2,63 +2,74 @@
 
 session_start();
 
-echo '<html><head></head>
-<body align="center">
-<h1>Checking Out</h1>
-<table border align="center">
-<th>
-Item
-</th>
-<th>
-Quantity
-</th>
-<th>
-Price
-</th>
-<th>
-Amount
-</th>
-<tr>
-<td>
-Web Applications
-</td>
-<td>';
+echo
+    '<html><head></head>
 
-echo $_SESSION["webAppCount"];
+    <body align="center">
+    <h1>Checking Out</h1>
+    <table border align="center">
 
-echo '</td>
-<td>
-$95
-</td>
-<td>';
+    <th>
+    Item
+    </th>
 
-echo "$" . $_SESSION["webAppCount"] * 95;
+    <th>
+    Quantity
+    </th>
 
-echo '
-</td>
-</tr>
+    <th>
+    Price
+    </th>
 
-<tr>
-<td>
-Javascript
-</td>
-<td>';
+    <th>
+    Amount
+    </th>
 
-echo $_SESSION["javascriptCount"];
+    <tr>
 
-echo '</td>
-<td>
-$135
-</td>
-<td>';
+    <td>
+    Web Applications
+    </td>
+    <td>';
 
-echo "$" . $_SESSION["javascriptCount"] * 135;
+    echo $_SESSION["webAppCount"];
 
-echo '
-</td>
-</tr>
-</table>
-</body>
-</html>';
+    echo '</td>
+    <td>
+    $95
+    </td>
+
+    <td>';
+
+    echo "$" . $_SESSION["webAppCount"] * 95;
+
+    echo '
+    </td>
+    </tr>
+
+    <tr>
+
+    <td>
+    Javascript
+    </td>
+    <td>';
+
+    echo $_SESSION["javascriptCount"];
+
+    echo '</td>
+
+    <td>
+    $135
+    </td>
+    <td>';
+
+    echo "$" . $_SESSION["javascriptCount"] * 135;
+
+    echo '
+    </td>
+    </tr>
+    </table>
+    </body>
+    </html>';
 
 ?>
