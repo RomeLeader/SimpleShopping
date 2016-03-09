@@ -1,5 +1,5 @@
 <?php
-session_start();
+session_start(); //Begin the session
 
 echo '<html><head></head></html>';
 
@@ -59,8 +59,8 @@ echo
     if (array_key_exists('webAppCount', $_GET) && array_key_exists('javascriptCount', $_GET)) //Avoid undefined index error
     {
 
-        $_SESSION["webAppCount"] = $_GET["webAppCount"];
-        $_SESSION["javascriptCount"] = $_GET["javascriptCount"];
+        $_SESSION["webAppCount"] = $_GET["webAppCount"]; //Store web app order session info
+        $_SESSION["javascriptCount"] = $_GET["javascriptCount"]; //Store Javascript order session info
     }
       echo
 
